@@ -147,11 +147,13 @@ if __name__ == '__main__':
     #takes roughly 2-3 hours to parse through
     #ALSO, DONT USE 'R' COLUMN. DOESNT ACCOUNT FOR LANGAUGE BUT READS IN EVERY R VALUE, BAD
     get_data()
+        
     #create path for data
     if not os.path.exists('data'):
         os.makedirs('data')
     main_df.to_csv('data/job_lang_data.csv')
     count_df.to_csv('data/job_count.csv')
+        
     #merge all data into their collective categories
     merge_categories()
 
