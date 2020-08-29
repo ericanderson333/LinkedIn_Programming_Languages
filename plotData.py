@@ -85,7 +85,6 @@ if __name__ == '__main__':
     job_names = data_df.columns
     lang_names = data_df.index
 
-
     #main menu portion
     choice = -1
     while choice != 0:
